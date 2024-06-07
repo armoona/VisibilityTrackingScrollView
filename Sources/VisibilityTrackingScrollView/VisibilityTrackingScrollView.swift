@@ -5,6 +5,7 @@
 
 import SwiftUI
 
+@MainActor
 public struct VisibilityTrackingScrollView<Content, ID>: View where Content: View, ID: Hashable {
     @ViewBuilder let content: Content
     

@@ -10,6 +10,7 @@ public enum VisibilityChange {
     case shown
 }
 
+@MainActor
 public class VisibilityTracker<ID: Hashable>: ObservableObject {
     /// The global bounds of the container view.
     public var containerBounds: CGRect
